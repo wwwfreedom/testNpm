@@ -1,12 +1,12 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
-import { Button } from "./Button/lib";
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import { action } from "@storybook/addon-actions"
+import { Button } from "./Button/lib"
 
-import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, number } from "@storybook/addon-knobs"
 
-const stories = storiesOf("Button", module);
-stories.addDecorator(withKnobs);
+const stories = storiesOf("Button", module)
+stories.addDecorator(withKnobs)
 
 stories.addWithInfo(
   "Default",
@@ -16,7 +16,7 @@ stories.addWithInfo(
       onClick={action("clicked")}
       bgcolor={text("BackgroundColor", "orange")}
     >
-      Hello Button
+      Hello Button test
     </Button>
   )
-);
+)
